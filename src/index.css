@@ -1,0 +1,588 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   -- modified by mahestro <millanluiseduardo@gmail.com>
+   -- BEM-friendly
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin        : 0;
+	padding       : 0;
+	border        : 0;
+	font-size     : 100%;
+	font          : inherit;
+	vertical-align: baseline;
+}
+input[type=submit],
+button {
+  border: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing : 0;
+}
+
+html {
+	min-height: 100%;
+ 	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family:      "Avenir", Helvetica, arial, sans-serif;
+  font-weight:      normal;
+  font-size:        16px;
+  line-height:      22px;
+  color:            #000;
+  background-color: #f8f8f8;
+  overflow-x:       hidden;
+  text-rendering:   geometricPrecision;
+}
+
+a {
+  color: #4490C1;
+  text-decoration: none;
+}
+
+/*------------------------------------
+FONTS
+------------------------------------*/
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir/Avenir-Black.eot');
+	src: url('fonts/avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Black.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Black.woff') format('woff'),
+		url('fonts/avenir/Avenir-Black.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Black.svg#Avenir-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir/Avenir-Light.eot');
+	src: url('fonts/avenir/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Light.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Light.woff') format('woff'),
+		url('fonts/avenir/Avenir-Light.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Light.svg#Avenir-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir/Avenir-Heavy.eot');
+	src: url('fonts/avenir/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Heavy.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Heavy.woff') format('woff'),
+		url('fonts/avenir/Avenir-Heavy.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir/Avenir-Medium.eot');
+	src: url('fonts/avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Medium.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Medium.woff') format('woff'),
+		url('fonts/avenir/Avenir-Medium.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Medium.svg#Avenir-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir/Avenir-Roman.eot');
+	src: url('fonts/avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Roman.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Roman.woff') format('woff'),
+		url('fonts/avenir/Avenir-Roman.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Roman.svg#Avenir-Roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url('fonts/avenir/Avenir-Book.eot');
+	src: url('fonts/avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+		url('fonts/avenir/Avenir-Book.woff2') format('woff2'),
+		url('fonts/avenir/Avenir-Book.woff') format('woff'),
+		url('fonts/avenir/Avenir-Book.ttf') format('truetype'),
+		url('fonts/avenir/Avenir-Book.svg#Avenir-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------------------------------------
+LAYOUT
+------------------------------------*/
+
+.cover {
+  height: 550px;
+  background: url('i/cover.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.cover__head {
+  padding-top: 150px;
+  text-align: center;
+}
+
+h1.cover__head__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: 'Avenir Book';
+  font-weight: normal;
+}
+
+.cover__separator {
+  width:  40vw;
+  height: 1px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 2px;
+}
+
+.cover__subhead {
+  height: 32px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.cover__subhead span {
+  font-family: 'Avenir Book';
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.container {
+  width: auto;
+  min-width: 375px;
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .1);
+}
+
+.wrapper--form {
+  width: auto;
+  min-width: 375px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.container--cover {
+  margin-top: -110px;
+  margin-bottom: 100px;
+}
+
+.container__submit-area {
+  margin-top: 145px;
+  height: 190px;
+  line-height: 190px;
+  background: #fcfcfc url('i/paper-plane.svg') no-repeat right bottom;
+  border-radius: 0 0 2px 2px;
+  border-top: solid 1px #e6e6e6;
+}
+
+.form__title {
+  padding: 70px 0 55px 0;
+  text-align: center;
+}
+
+.form__title__separator {
+  width: 120px;
+  height: 5px;
+  margin: 15px auto 0;
+  background-color: #F17F39;
+  border-radius: 1px;
+}
+
+.form__title__headline {
+  width: 400px;
+  margin: 35px auto 0;
+  font-family: 'Avenir';
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #6D6D6D;
+  text-align: center;
+}
+
+.form__field {
+  margin-bottom: 45px;
+}
+
+.form__field--button {
+  text-align: right;
+}
+
+.form__label {
+  margin-bottom: 15px;
+}
+
+.form__field--error input[type="text"] {
+  border-color: #D10B0B;
+}
+
+.form__field__alert {
+  color: #D10B0B;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.submit-notification {
+  width: auto;
+  min-width: 375px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 75px;
+  text-align: center;
+}
+
+.submit-notification__img {
+  margin-bottom: 60px;
+}
+
+.submit-notification__caption {
+  padding: 20px 0 140px 0;
+  color: #6D6D6D;
+}
+
+h2 {
+  font-family: 'Avenir';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000;
+}
+
+label {
+  font-family: 'Avenir';
+  font-weight: normal;
+  font-size: 16px;
+  color: #6D6D6D;
+}
+
+input, textarea {
+  font-family: 'Avenir';
+}
+
+.input-required {
+  font-family: 'Avenir';
+  font-weight: 500px;
+  color: #D10B0B;
+}
+
+.textfield {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: solid 1px #E6E6E6;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: solid 1px #E6E6E6;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.textfield::placeholder,
+.textarea::placeholder {
+  color: #d2d2d2;
+}
+
+.checkbox {
+  margin-bottom: 5px;
+}
+
+.checkbox label {
+  margin-left: 10px;
+}
+
+/*------------------------------------
+BUTTONS
+------------------------------------*/
+.button {
+  font-family: 'Avenir Book';
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 2px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.button--submit {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #1abb83;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--submit:hover,
+.button--submit:focus {
+  background-color: #28da9c;
+  border-bottom: solid 2px #1abb83;
+}
+
+.button--submit:active {
+  background-color: #16af7a;
+}
+
+.button--submit[disabled] {
+  background-color: #f8f8f8;
+  color: #a2a2a2;
+  cursor: progress;
+}
+
+.button--submit[disabled]:hover {
+  border: none;
+}
+
+.button--outlined {
+  display: inline-block;
+  font-family: 'Avenir';
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #1ABB83;
+  border-radius: 2px;
+  vertical-align: top;
+  color: #1ABB83;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button--outlined:hover,
+.button--outlined:focus {
+  filter: opacity(0.7);
+}
+
+.button--outlined:active {
+  filter: opacity(0.4);
+}
+
+.button--outlined[disabled=disabled] {
+  filter: opacity(0.8);
+  border-color: #a2a2a2;
+  color: #a2a2a2;
+}
+
+.button--outlined .icon {
+  vertical-align: middle;
+}
+
+.button--outlined span {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/*------------------------------------
+ICONS
+------------------------------------*/
+
+.icon {
+  display: inline-block;
+  background: url('i/sprite.png');
+  background-size: 80px;
+}
+
+.icon--small {
+	width  : 20px;
+	height : 20px;
+}
+
+.icon--medium {
+	width  : 32px;
+	height : 32px;
+}
+
+.icon--back {
+	background-position: 0 0;
+}
+
+.icon--timer {
+	background-position: 0 -20px;
+}
+
+.icon--plus {
+	background-position: 0 -60px;
+}
+
+
+/*------------------------------------
+HELPERS
+------------------------------------*/
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear  : both;
+}
+
+
+/*------------------------------------
+MEDIAS
+------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 192dpi) {
+	.icon {
+		background-image: url('i/sprite@2x.png')
+	}
+}
