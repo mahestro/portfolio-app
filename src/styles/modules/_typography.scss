@@ -1,0 +1,42 @@
+// Font variables
+
+$font-primary:                     'Merriweather';
+$font-primary-weight-light:        300;
+$font-primary-weight-regular:      400;
+$font-primary-weight-medium:       600;
+$font-primary-weight-bold:         800;
+$font-primary-stack:               $font-primary, Helvetica, arial, sans-serif;
+
+$font-secondary:                   'Montserrat';
+$font-secondary-weight-thin:       100;
+$font-secondary-weight-extralight: 200;
+$font-secondary-weight-light:      300;
+$font-secondary-weight-regular:    400;
+$font-secondary-weight-medium:     500;
+$font-secondary-weight-semibold:   600;
+$font-secondary-weight-bold:       700;
+$font-secondary-weight-extrabold:  800;
+$font-secondary-weight-black:      900;
+$font-secondary-stack:             $font-secondary, arial, sans-serif;
+
+
+// Content sizing
+
+$h1-size:                          78px;
+$h1-lineheight:                    84px;
+$h2-size:                          58px;
+$h2-lineheight:                    72px;
+$h3-size:                          46px;
+$h3-lineheight:                    60px;
+$h4-size:                          34px;
+$h4-lineheight:                    48px;
+$h5-size:                          26px;
+$h5-lineheight:                    36px;
+$lead-size:                        20px;
+$lead-lineheight:                  24px;
+$body-size:                        16px;
+$body-lineheight:                  24px;
+$caption-size:                     12px;
+$caption-lineheight:               24px;
+$small-size:                       10px;
+$small-lineheight:                 12px;

@@ -1,0 +1,176 @@
+@import 'styles/modules/all';
+@import 'styles/partials/reset';
+
+body {
+  font-family:      $font-primary-stack, Helvetica, arial, sans-serif;
+  font-weight:      $font-primary-weight-regular;
+  font-style:       normal;
+  font-size:        $body-size;
+  line-height:      $body-lineheight;
+  color:            $color-black;
+  background-color: $color-lighter-grey;
+  overflow-x:       hidden;
+  text-rendering:   geometricPrecision;
+}
+
+a {
+  color:           $color-primary;
+  text-decoration: none;
+}
+
+/*------------------------------------
+FONTS
+------------------------------------*/
+
+@include font-family($font-primary, $font-primary-weight-light, italic, 'fonts/merriweather/', 'Merriweather-LightIt');
+@include font-family($font-primary, $font-primary-weight-regular, normal, 'fonts/merriweather/', 'Merriweather-Regular');
+@include font-family($font-primary, $font-primary-weight-regular, italic, 'fonts/merriweather/', 'Merriweather-Italic');
+@include font-family($font-primary, $font-primary-weight-medium, normal, 'fonts/merriweather/', 'Merriweather-Bold');
+@include font-family($font-primary, $font-primary-weight-medium, italic, 'fonts/merriweather/', 'Merriweather-BoldItalic');
+@include font-family($font-primary, $font-primary-weight-bold, normal, 'fonts/merriweather/', 'MerriweatherUltraBold');
+@include font-family($font-primary, $font-primary-weight-bold, italic, 'fonts/merriweather/', 'Merriweather-UltraBdIt');
+
+@include font-family($font-secondary, $font-secondary-weight-thin, normal, 'fonts/montserrat/', 'Montserrat-Thin');
+@include font-family($font-secondary, $font-secondary-weight-extralight, normal, 'fonts/montserrat/', 'Montserrat-ExtraLight');
+@include font-family($font-secondary, $font-secondary-weight-light, normal, 'fonts/montserrat/', 'Montserrat-Light');
+@include font-family($font-secondary, $font-secondary-weight-regular, normal, 'fonts/montserrat/', 'Montserrat-Regular');
+@include font-family($font-secondary, $font-secondary-weight-medium, normal, 'fonts/montserrat/', 'Montserrat-Medium');
+@include font-family($font-secondary, $font-secondary-weight-semibold, normal, 'fonts/montserrat/', 'Montserrat-SemiBold');
+@include font-family($font-secondary, $font-secondary-weight-black, normal, 'fonts/montserrat/', 'Montserrat-Black');
+
+/*------------------------------------
+LAYOUT
+------------------------------------*/
+
+input, textarea {
+  font-family: 'Avenir';
+}
+
+.textfield {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: solid 1px #E6E6E6;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: solid 1px #E6E6E6;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #4f4f4f;
+}
+
+.textfield::placeholder,
+.textarea::placeholder {
+  color: #d2d2d2;
+}
+
+/*------------------------------------
+BUTTONS
+------------------------------------*/
+.button {
+  font-family: 'Avenir Book';
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 2px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.button--submit {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #1abb83;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--submit:hover,
+.button--submit:focus {
+  background-color: #28da9c;
+  border-bottom: solid 2px #1abb83;
+}
+
+.button--submit:active {
+  background-color: #16af7a;
+}
+
+.button--submit[disabled] {
+  background-color: #f8f8f8;
+  color: #a2a2a2;
+  cursor: progress;
+}
+
+.button--submit[disabled]:hover {
+  border: none;
+}
+
+/*------------------------------------
+ICONS
+------------------------------------*/
+
+.icon {
+  display: inline-block;
+  background-size: 80px;
+}
+
+.icon--small {
+	width  : 20px;
+	height : 20px;
+}
+
+.icon--medium {
+	width  : 32px;
+	height : 32px;
+}
+
+.icon--back {
+	background-position: 0 0;
+}
+
+.icon--timer {
+	background-position: 0 -20px;
+}
+
+.icon--plus {
+	background-position: 0 -60px;
+}
+
+
+/*------------------------------------
+HELPERS
+------------------------------------*/
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear  : both;
+}
+
+
+/*------------------------------------
+MEDIAS
+------------------------------------*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 192dpi) {
+	.icon {
+		/* background-image: url('i/sprite@2x.png') */
+	}
+}
