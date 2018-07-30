@@ -253,8 +253,103 @@ FONTS
   font-style: normal; }
 
 /*------------------------------------
+TYPOGRAPHY
+------------------------------------*/
+.color--white {
+  color: #FFF; }
+
+.color--grey {
+  color: #77716D; }
+
+h1 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 78px;
+  line-height: 84px;
+  font-weight: 300; }
+
+h2 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 400; }
+
+h3 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 400; }
+
+h4 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 400; }
+
+h5 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 400; }
+
+.typography-lead {
+  font-family: "Merriweather", Helvetica, arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.typography-body, p {
+  font-family: "Merriweather", Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.typography-caption {
+  font-family: "Merriweather", Helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.typography-small {
+  font-family: "Merriweather", Helvetica, arial, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400; }
+
+/*------------------------------------
 LAYOUT
 ------------------------------------*/
+nav {
+  height: 55px; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      position: relative;
+      width: 100px;
+      height: 55px;
+      line-height: 55px;
+      text-align: center; }
+    nav ul li a {
+      color: #77716D; }
+    nav ul li a:hover, nav ul li a:active {
+      color: #FF6700; }
+    nav ul li.selected::before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 1;
+      width: 25px;
+      height: 4px;
+      margin-left: -12px;
+      background-color: #FF6700; }
+    nav ul li.selected a {
+      font-weight: 600;
+      color: #3B3836; }
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
 input, textarea {
   font-family: 'Avenir'; }
 

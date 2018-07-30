@@ -39,8 +39,130 @@ FONTS
 @include font-family($font-secondary, $font-secondary-weight-black, normal, 'fonts/montserrat/', 'Montserrat-Black');
 
 /*------------------------------------
+TYPOGRAPHY
+------------------------------------*/
+
+.color--white {
+  color: $color-white;
+}
+
+.color--grey {
+  color: $color-grey;
+}
+
+h1 {
+  font-family: $font-secondary-stack;
+  font-size:   $h1-size;
+  line-height: $h1-lineheight;
+  font-weight: $font-secondary-weight-light
+}
+
+h2 {
+  font-family: $font-secondary-stack;
+  font-size:   $h2-size;
+  line-height: $h2-lineheight;
+  font-weight: $font-secondary-weight-regular;
+}
+
+h3 {
+  font-family: $font-secondary-stack;
+  font-size:   $h3-size;
+  line-height: $h3-lineheight;
+  font-weight: $font-secondary-weight-regular;
+}
+
+h4 {
+  font-family: $font-secondary-stack;
+  font-size:   $h4-size;
+  line-height: $h4-lineheight;
+  font-weight: $font-secondary-weight-regular;
+}
+
+h5 {
+  font-family: $font-secondary-stack;
+  font-size:   $h5-size;
+  line-height: $h5-lineheight;
+  font-weight: $font-secondary-weight-regular;
+}
+
+.typography-lead {
+  font-family: $font-primary-stack;
+  font-size:   $lead-size;
+  line-height: $lead-lineheight;
+  font-weight: $font-primary-weight-regular;
+}
+
+.typography-body, p {
+  font-family: $font-primary-stack;
+  font-size:   $body-size;
+  line-height: $body-lineheight;
+  font-weight: $font-primary-weight-regular;
+}
+
+.typography-caption {
+  font-family: $font-primary-stack;
+  font-size:   $caption-size;
+  line-height: $caption-lineheight;
+  font-weight: $font-primary-weight-regular;
+}
+
+.typography-small {
+  font-family: $font-primary-stack;
+  font-size:   $small-size;
+  line-height: $small-lineheight;
+  font-weight: $font-primary-weight-regular;
+}
+
+
+/*------------------------------------
 LAYOUT
 ------------------------------------*/
+
+nav {
+  height: 55px;
+
+  & ul {
+    display: flex;
+
+    & li {
+      position:    relative;
+      width:       100px;
+      height:      55px;
+      line-height: 55px;
+      text-align:  center;
+    }
+
+    & li a {
+      color: $color-grey;
+    }
+
+    & li a:hover, li a:active {
+      color: $color-primary;
+    }
+
+    & li.selected::before {
+      content:          ' ';
+      position:         absolute;
+      top:              0;
+      left:             50%;
+      z-index:          1;
+      width:            25px;
+      height:           4px;
+      margin-left:      -12px;
+      background-color: $color-primary;
+    }
+
+    & li.selected a {
+      font-weight: $font-primary-weight-medium;
+      color:       $color-black;
+    }
+  }
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
 
 input, textarea {
   font-family: 'Avenir';
