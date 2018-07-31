@@ -11,22 +11,15 @@ import imgSquidjob from '../i/squidjob-work-list.png';
 import imgSquidjob2x from '../i/squidjob-work-list@2x.png';
 import imgConcepts from '../i/concepts-work-list.png';
 import imgConcepts2x from '../i/concepts-work-list@2x.png';
-import Icon from '../components/Icon';
+import Header from './Header';
+import Footer from './Footer';
 import Work from '../components/Work';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <header>
-          <nav className="wrapper">
-            <ul>
-              <li className="selected"><a href="">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="resume.pdf">Resume</a></li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
 
         <section className="work wrapper">
           <Work
@@ -80,48 +73,7 @@ class App extends Component {
             customCoverClass="concepts" />
         </section>
 
-        <footer>
-          <div className="wrapper">
-            <div className="footer__photo">
-              <picture></picture>
-            </div>
-            <div className="footer__info">
-              <h4 className="color--white">Luis Millán</h4>
-              <p className="color--white">UX designer and project manager, specialising in interaction design, visual design and frontend development for digital experiences.</p>
-            </div>
-            <div className="footer__links">
-              <ul>
-                <li>
-                    <a href="https://www.linkedin.com/luismillan">
-                      <Icon className="icon icon--small" id="lnkdin" />
-                      Linkedin
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.topcoder.com/members/mahestro">
-                      <Icon className="icon icon--small" id="topcoder" />
-                      Topcoder
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/mahestro">
-                      <Icon className="icon icon--small" id="github" />
-                      Github
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mahestro">
-                      <Icon className="icon icon--small" id="instagram" />
-                      Instagram
-                    </a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer__copyright">
-              <p className="typography-caption color--grey">Designed and coded by me. © Copyright 2018 Luis Millán. All rights reserved</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     );
   }

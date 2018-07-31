@@ -291,8 +291,8 @@ h5 {
   line-height: 36px;
   font-weight: 400; }
 
-.typography-lead {
-  font-family: "Merriweather", Helvetica, arial, sans-serif;
+.typography-lead, .footer__links ul li a {
+  font-family: "Montserrat", arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400; }
@@ -352,6 +352,56 @@ nav {
 
 footer {
   background-color: #3B3836; }
+
+.footer__photo {
+  padding-top: 84px; }
+
+.footer__photo__mask {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden; }
+
+.footer__info {
+  padding-top: 36px;
+  width: 305px;
+  margin: 0 auto;
+  text-align: center; }
+  .footer__info p {
+    padding-top: 12px;
+    color: #ECECEC; }
+  .footer__info:after {
+    content: ' ';
+    display: block;
+    margin: 68px auto 0;
+    width: 20px;
+    height: 4px;
+    background-color: #77716D; }
+
+.footer__links {
+  padding-top: 72px; }
+  .footer__links ul {
+    display: flex;
+    width: 520px;
+    margin: 0 auto; }
+    .footer__links ul li {
+      width: 130px;
+      height: 70px;
+      margin: auto;
+      text-align: center; }
+      .footer__links ul li .icon {
+        display: block;
+        margin: 0 auto 12px;
+        fill: #ECECEC; }
+
+.footer__copyright {
+  padding: 216px 0 48px;
+  width: 190px;
+  margin: 0 auto;
+  text-align: center; }
 
 .work {
   padding-top: 124px; }
@@ -543,16 +593,13 @@ ICONS
 .icon--arrowback {
   fill: #FF6700; }
 
-.icon--lnkdin {
-  fill: #FF6700; }
-
 /*------------------------------------
 HELPERS
 ------------------------------------*/
 .hide {
   display: none; }
 
-.work__item__photo img {
+.footer__photo__mask img, .work__item__photo img {
   max-height: 100%;
   max-width: 100%;
   width: auto;
