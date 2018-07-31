@@ -318,6 +318,10 @@ h5 {
 /*------------------------------------
 LAYOUT
 ------------------------------------*/
+.wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
 nav {
   height: 55px; }
   nav ul {
@@ -342,16 +346,91 @@ nav {
       height: 4px;
       margin-left: -12px;
       background-color: #FF6700; }
-    nav ul li.selected a {
+    nav ul li.selected a, nav ul li.selected a:hover {
       font-weight: 600;
       color: #3B3836; }
 
-.wrapper {
-  width: 960px;
-  margin: 0 auto; }
+footer {
+  background-color: #3B3836; }
+
+.work {
+  padding-top: 124px; }
+
+.work__item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 140px; }
+
+.work__item:first-child {
+  margin-top: 0; }
+
+.work__item:last-child {
+  margin-bottom: 200px; }
+
+.work__item--left-orientation {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.work__item__photo {
+  position: relative;
+  border-radius: 2px;
+  background-color: #004C9A;
+  width: 632px;
+  height: 504px;
+  text-align: center; }
+
+.work__item__photo--dejavu {
+  background-color: #E0ECF6; }
+
+.work__item__photo--nasa {
+  background-attachment: fixed;
+  background: url(./i/nasa-work-list.png) center center;
+  background-color: #004C9A; }
+
+.work__item__photo--lmp {
+  background-color: #D7F1C9; }
+
+.work__item__photo--squidjob {
+  background-color: #E0ECF6; }
+
+.work__item__photo--concepts {
+  background-color: #ECECEC; }
+
+.work__item__info {
+  position: absolute;
+  top: 49px;
+  right: 0px;
+  width: 404px;
+  height: 504px;
+  background-color: #FFF;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: -5px 20px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 2px; }
+
+.work__item--left-orientation .work__item__info {
+  top: -49px;
+  left: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 5px 20px 35px rgba(0, 0, 0, 0.05); }
+
+.work__item__info__wrapper {
+  width: 254px;
+  margin: 0 auto;
+  padding-top: 80px; }
+
+.work__item__info__tags {
+  color: #77716D;
+  padding-top: 12px; }
+
+.work__item__info__content {
+  padding-top: 48px; }
+
+.work__item__info__button {
+  padding-top: 44px; }
 
 input, textarea {
-  font-family: 'Avenir'; }
+  font-family: "Merriweather", Helvetica, arial, sans-serif; }
 
 .textfield {
   width: 100%;
@@ -379,10 +458,30 @@ input, textarea {
   color: #d2d2d2; }
 
 /*------------------------------------
+LINKS
+------------------------------------*/
+.link {
+  color: #FF6700;
+  text-decoration: none; }
+  .link .icon {
+    margin-left: 4px; }
+
+.link:hover,
+.link:focus {
+  color: #77716D;
+  text-decoration: underline; }
+  .link:hover .icon,
+  .link:focus .icon {
+    fill: #77716D; }
+
+.link:active {
+  color: #004C9A; }
+
+/*------------------------------------
 BUTTONS
 ------------------------------------*/
 .button {
-  font-family: 'Avenir Book';
+  font-family: "Merriweather", Helvetica, arial, sans-serif;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
@@ -424,36 +523,43 @@ ICONS
 ------------------------------------*/
 .icon {
   display: inline-block;
-  background-size: 80px; }
+  fill: #3B3836; }
+
+.icon--xsmall {
+  width: 14px;
+  height: 14px; }
 
 .icon--small {
-  width: 20px;
-  height: 20px; }
+  width: 24px;
+  height: 24px; }
 
-.icon--medium {
-  width: 32px;
-  height: 32px; }
+.icon--regular {
+  width: 36px;
+  height: 36px; }
 
-.icon--back {
-  background-position: 0 0; }
+.icon--arrow {
+  fill: #FF6700; }
 
-.icon--timer {
-  background-position: 0 -20px; }
+.icon--arrowback {
+  fill: #FF6700; }
 
-.icon--plus {
-  background-position: 0 -60px; }
+.icon--lnkdin {
+  fill: #FF6700; }
 
 /*------------------------------------
 HELPERS
 ------------------------------------*/
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both; }
+.hide {
+  display: none; }
 
-/*------------------------------------
-MEDIAS
-------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
-  .icon {
-    /* background-image: url('i/sprite@2x.png') */ } }
+.work__item__photo img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }

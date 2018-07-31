@@ -118,6 +118,11 @@ h5 {
 LAYOUT
 ------------------------------------*/
 
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
 nav {
   height: 55px;
 
@@ -152,20 +157,116 @@ nav {
       background-color: $color-primary;
     }
 
-    & li.selected a {
+    & li.selected a, li.selected a:hover {
       font-weight: $font-primary-weight-medium;
       color:       $color-black;
     }
   }
 }
 
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
+footer {
+  background-color: $color-black;
 }
 
+.work {
+  padding-top: $base-unit * 31;
+}
+
+  .work__item {
+    width:      100%;
+    display:    flex;
+    position:   relative;
+    margin-top: $base-unit * 35;
+  }
+
+  .work__item:first-child {
+    margin-top: 0;
+  }
+
+  .work__item:last-child {
+    margin-bottom: $base-unit * 50;
+  }
+
+  .work__item--left-orientation {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+    .work__item__photo {
+      position:         relative;
+      border-radius:    $corner-radius;
+      background-color: $color-tertiary;
+      width:            632px;
+      height:           504px;
+      text-align:       center;
+
+      & img {
+        @extend %img.img-vertical-middle;
+      }
+    }
+
+    .work__item__photo--dejavu {
+      background-color: $color-aqua;
+    }
+
+    .work__item__photo--nasa {
+      background-attachment: fixed;
+      background: url(./i/nasa-work-list.png) center center;
+      background-color: $color-tertiary;
+    }
+
+    .work__item__photo--lmp {
+      background-color: $color-grass;
+    }
+
+    .work__item__photo--squidjob {
+      background-color: $color-aqua;
+    }
+
+    .work__item__photo--concepts {
+      background-color: $color-light-grey;
+    }
+
+    .work__item__info {
+      position:         absolute;
+      top:              49px;
+      right:            0px;
+      width:            404px;
+      height:           504px;
+      background-color: $color-white;
+      box-shadow:       -5px 5px 10px rgba(0, 0, 0, .06);
+      box-shadow:       -5px 20px 35px rgba(0, 0, 0, .05);
+      border-radius:    $corner-radius;
+    }
+
+    .work__item--left-orientation .work__item__info {
+      top:        -49px;
+      left:       6px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, .06);
+      box-shadow: 5px 20px 35px rgba(0, 0, 0, .05);
+    }
+
+      .work__item__info__wrapper {
+        width:       254px;
+        margin:      0 auto;
+        padding-top: $base-unit * 20;
+      }
+
+      .work__item__info__tags {
+        color:       $color-grey;
+        padding-top: $base-unit * 3;
+      }
+
+      .work__item__info__content {
+        padding-top: $base-unit * 12;
+      }
+
+      .work__item__info__button {
+        padding-top: $base-unit * 11;
+      }
+
 input, textarea {
-  font-family: 'Avenir';
+  font-family: $font-primary-stack;
 }
 
 .textfield {
@@ -196,11 +297,40 @@ input, textarea {
   color: #d2d2d2;
 }
 
+
+/*------------------------------------
+LINKS
+------------------------------------*/
+
+.link {
+	color:            $color-primary;
+  text-decoration: none;
+
+  & .icon {
+    margin-left: $base-unit,
+  }
+}
+
+.link:hover,
+.link:focus {
+	color:           $color-grey;
+  text-decoration: underline;
+
+  & .icon {
+    fill: $color-grey;
+  }
+}
+
+.link:active {
+	color: $color-tertiary;
+}
+
 /*------------------------------------
 BUTTONS
 ------------------------------------*/
+
 .button {
-  font-family: 'Avenir Book';
+  font-family: $font-primary-stack;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
@@ -249,50 +379,53 @@ ICONS
 
 .icon {
   display: inline-block;
-  background-size: 80px;
+  fill: $color-black;
+}
+
+.icon--xsmall {
+	width:  14px;
+	height: 14px;
 }
 
 .icon--small {
-	width  : 20px;
-	height : 20px;
+	width:  24px;
+	height: 24px;
 }
 
-.icon--medium {
-	width  : 32px;
-	height : 32px;
+.icon--regular {
+	width:  36px;
+	height: 36px;
 }
 
-.icon--back {
-	background-position: 0 0;
+.icon--arrow {
+  fill: $color-primary;
 }
 
-.icon--timer {
-	background-position: 0 -20px;
+.icon--arrowback {
+  fill: $color-primary;
 }
 
-.icon--plus {
-	background-position: 0 -60px;
+.icon--lnkdin {
+  fill: $color-primary;
 }
-
 
 /*------------------------------------
 HELPERS
 ------------------------------------*/
 
-.clearfix::after {
-	content: '';
-	display: table;
-	clear  : both;
+.hide {
+  display: none;
 }
 
-
-/*------------------------------------
-MEDIAS
-------------------------------------*/
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 192dpi) {
-	.icon {
-		/* background-image: url('i/sprite@2x.png') */
-	}
+%img.img-vertical-middle {
+	max-height: 100%;
+	max-width : 100%;
+	width     : auto;
+	height    : auto;
+	position  : absolute;
+	top       : 0;
+	bottom    : 0;
+	left      : 0;
+	right     : 0;
+	margin    : auto;
 }
