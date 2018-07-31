@@ -6,7 +6,7 @@ const Header = () => (
       <ul>
         <li className="selected"><a href="">Work</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="resume.pdf">Resume</a></li>
+        <li><a href="resume.pdf" rel="noopener noreferrer" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>

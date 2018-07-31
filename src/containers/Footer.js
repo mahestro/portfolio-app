@@ -5,6 +5,8 @@ import imgPersonalPhoto2x from '../i/luis-millan-photo@2x.jpg';
 
 const Footer = () => (
   <footer>
+    <a id="about"></a>
+
     <div className="wrapper">
       <div className="footer__photo">
         <div className="footer__photo__mask">
@@ -21,25 +23,25 @@ const Footer = () => (
       <div className="footer__links">
         <ul>
           <li>
-              <a className="link" href="https://www.linkedin.com/in/luis-mill%C3%A1n-1993689/">
+              <a className="link" href="https://www.linkedin.com/in/luis-mill%C3%A1n-1993689/" rel="noopener noreferrer" target="_blank">
                 <Icon className="icon icon--small" id="lnkdin" />
                 Linkedin
               </a>
           </li>
           <li>
-              <a className="link" href="https://www.topcoder.com/members/mahestro">
+              <a className="link" href="https://www.topcoder.com/members/mahestro" rel="noopener noreferrer" target="_blank">
                 <Icon className="icon icon--small" id="topcoder" />
                 Topcoder
               </a>
           </li>
           <li>
-              <a className="link" href="https://www.github.com/mahestro">
+              <a className="link" href="https://www.github.com/mahestro" rel="noopener noreferrer" target="_blank">
                 <Icon className="icon icon--small" id="github" />
                 Github
               </a>
           </li>
           <li>
-              <a className="link" href="https://www.instagram.com/mahestro">
+              <a className="link" href="https://www.instagram.com/mahestro" rel="noopener noreferrer" target="_blank">
                 <Icon className="icon icon--small" id="instgram" />
                 Instagram
               </a>
