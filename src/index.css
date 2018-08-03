@@ -403,6 +403,12 @@ footer {
   margin: 0 auto;
   text-align: center; }
 
+.prefooter {
+  height: 168px;
+  line-height: 168px;
+  text-align: center;
+  background-color: #FFF; }
+
 .work {
   padding-top: 124px; }
 

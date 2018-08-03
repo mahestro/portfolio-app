@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import * as orientations from '../constants/system';
 import Icon from '../components/Icon';
 
@@ -29,7 +30,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
           <p className="work__item__info__tags">{tags}</p>
           <p className="work__item__info__content">{description}</p>
           <div className="work__item__info__button">
-            <a className="link" href={link}>View Case <Icon id="arrow" className="icon icon--xsmall" /></a>
+            <Link className="link" to={`/work/${link}`}>View Case <Icon id="arrow" className="icon icon--xsmall" /></Link>
           </div>
         </div>
       </aside>
