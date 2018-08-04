@@ -8,7 +8,7 @@ import Icon from '../components/Icon';
 const Work = ({title, tags, description, link, img, img2x, orientation, customCoverClass}) => {
   let photoClass = 'work__item__photo';
   let orientationClass = 'work__item';
-  let offsetY = 30;
+  let offsetY = 35;
 
   if (customCoverClass && customCoverClass.length > 0) {
     photoClass += ` work__item__photo--${customCoverClass}`;

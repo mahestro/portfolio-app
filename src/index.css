@@ -425,7 +425,6 @@ footer {
   margin-bottom: 200px; }
 
 .work__item--left-orientation {
-  display: flex;
   flex-direction: row-reverse; }
 
 .work__item__photo {
@@ -455,7 +454,7 @@ footer {
 .work__item__info {
   position: relative;
   top: 20px;
-  right: 35px;
+  right: 25px;
   width: 404px;
   height: 504px;
   background-color: #FFF;
