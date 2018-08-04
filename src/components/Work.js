@@ -9,6 +9,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
   let photoClass = 'work__item__photo';
   let orientationClass = 'work__item';
   let offsetY = 35;
+  let senseUpwards = true;
 
   if (customCoverClass && customCoverClass.length > 0) {
     photoClass += ` work__item__photo--${customCoverClass}`;
@@ -16,7 +17,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
 
   if (orientation && orientation.length > 0 && orientation === orientations.CARD_ORIENTATION_LEFT) {
     orientationClass += ' work__item--left-orientation';
-    offsetY *= -1;
+    senseUpwards = false;
   }
 
   return (
@@ -30,8 +31,9 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
 
       <aside>
       <Parallax
-        offsetYMin={`${offsetY * -1}px`}
-        offsetYMax={`${offsetY}px`}>
+        offsetYMin={`${offsetY}px`}
+        offsetYMax={`${offsetY * -1}px`}
+        slowerScrollRate={senseUpwards}>
         <div className="work__item__info">
           <div className="work__item__info__wrapper">
             <h5>{title}</h5>
