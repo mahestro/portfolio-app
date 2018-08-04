@@ -274,7 +274,6 @@ footer {
 
     .work__item__photo {
       position:         relative;
-      border-radius:    $corner-radius;
       background-color: $color-tertiary;
       width:            632px;
       height:           504px;
@@ -308,9 +307,9 @@ footer {
     }
 
     .work__item__info {
-      position:         absolute;
-      top:              49px;
-      right:            0px;
+      position:         relative;
+      top:              20px;
+      right:            35px;
       width:            404px;
       height:           504px;
       background-color: $color-white;
@@ -320,8 +319,8 @@ footer {
     }
 
     .work__item--left-orientation .work__item__info {
-      top:        -49px;
-      left:       6px;
+      top:        -10px;
+      left:       15px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, .06);
       box-shadow: 5px 20px 35px rgba(0, 0, 0, .05);
     }

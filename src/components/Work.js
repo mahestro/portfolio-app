@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { Parallax } from 'react-scroll-parallax';
 import * as orientations from '../constants/system';
 import Icon from '../components/Icon';
 
 const Work = ({title, tags, description, link, img, img2x, orientation, customCoverClass}) => {
   let photoClass = 'work__item__photo';
   let orientationClass = 'work__item';
+  let offsetY = 30;
 
   if (customCoverClass && customCoverClass.length > 0) {
     photoClass += ` work__item__photo--${customCoverClass}`;
@@ -14,6 +16,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
 
   if (orientation && orientation.length > 0 && orientation === orientations.CARD_ORIENTATION_LEFT) {
     orientationClass += ' work__item--left-orientation';
+    offsetY *= -1;
   }
 
   return (
@@ -24,15 +27,22 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
           srcSet={`${img2x} 2x`}
           alt={title} />
       </div>
-      <aside className="work__item__info">
-        <div className="work__item__info__wrapper">
-          <h5>{title}</h5>
-          <p className="work__item__info__tags">{tags}</p>
-          <p className="work__item__info__content">{description}</p>
-          <div className="work__item__info__button">
-            <Link className="link" to={`/work/${link}`}>View Case <Icon id="arrow" className="icon icon--xsmall" /></Link>
+
+      <aside>
+      <Parallax
+        offsetYMin={`${offsetY * -1}px`}
+        offsetYMax={`${offsetY}px`}>
+        <div className="work__item__info">
+          <div className="work__item__info__wrapper">
+            <h5>{title}</h5>
+            <p className="work__item__info__tags">{tags}</p>
+            <p className="work__item__info__content">{description}</p>
+            <div className="work__item__info__button">
+              <Link className="link" to={`/work/${link}`}>View Case <Icon id="arrow" className="icon icon--xsmall" /></Link>
+            </div>
           </div>
         </div>
+      </Parallax>
       </aside>
     </article>
   );
