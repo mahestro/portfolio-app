@@ -133,8 +133,8 @@ nav {
       position:    relative;
       width:       100px;
       height:      55px;
-      line-height: 55px;
       text-align:  center;
+      padding-top: 31px;
     }
 
     & li a {
@@ -254,9 +254,15 @@ footer {
 
   .work__item {
     width:      100%;
-    display:    flex;
     position:   relative;
     margin-top: $base-unit * 35;
+    height:     553px;
+
+    & aside {
+      position: absolute;
+      top:      0;
+      right:    0;
+    }
   }
 
   .work__item:first-child {
@@ -264,15 +270,11 @@ footer {
   }
 
   .work__item:last-child {
-    margin-bottom: $base-unit * 50;
-  }
-
-  .work__item--left-orientation {
-    flex-direction: row-reverse;
+    margin-bottom: $base-unit * 54;
   }
 
     .work__item__photo {
-      position:         relative;
+      position:         absolute;
       background-color: $color-tertiary;
       width:            632px;
       height:           504px;
@@ -306,9 +308,9 @@ footer {
     }
 
     .work__item__info {
-      position:         relative;
-      top:              30px;
-      right:            25px;
+      position:         absolute;
+      top:              40px;
+      right:            6px;
       width:            404px;
       height:           504px;
       background-color: $color-white;
@@ -317,17 +319,27 @@ footer {
       border-radius:    $corner-radius;
     }
 
-    .work__item--left-orientation .work__item__info {
-      top:        -20px;
-      left:       15px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, .06);
-      box-shadow: 5px 20px 35px rgba(0, 0, 0, .05);
+    .work__item--left-orientation {
+      & .work__item__info {
+        top:        -20px;
+        left:       6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .06);
+        box-shadow: 5px 20px 35px rgba(0, 0, 0, .05);
+      }
+
+      & .work__item__photo {
+        right: 0;
+      }
+
+      & aside {
+        left: 0;
+      }
     }
 
       .work__item__info__wrapper {
         width:       254px;
         margin:      0 auto;
-        padding-top: $base-unit * 20;
+        padding-top: $base-unit * 19;
       }
 
       .work__item__info__tags {

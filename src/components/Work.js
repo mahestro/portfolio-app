@@ -9,7 +9,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
   let photoClass = 'work__item__photo';
   let orientationClass = 'work__item';
   let offsetY = 35;
-  let senseUpwards = true;
+  let senseUpwards = false;
 
   if (customCoverClass && customCoverClass.length > 0) {
     photoClass += ` work__item__photo--${customCoverClass}`;
@@ -17,7 +17,7 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
 
   if (orientation && orientation.length > 0 && orientation === orientations.CARD_ORIENTATION_LEFT) {
     orientationClass += ' work__item--left-orientation';
-    senseUpwards = false;
+    senseUpwards = true;
   }
 
   return (
@@ -30,21 +30,21 @@ const Work = ({title, tags, description, link, img, img2x, orientation, customCo
       </div>
 
       <aside>
-      <Parallax
-        offsetYMin={`${offsetY}px`}
-        offsetYMax={`${offsetY * -1}px`}
-        slowerScrollRate={senseUpwards}>
-        <div className="work__item__info">
-          <div className="work__item__info__wrapper">
-            <h5>{title}</h5>
-            <p className="work__item__info__tags">{tags}</p>
-            <p className="work__item__info__content">{description}</p>
-            <div className="work__item__info__button">
-              <Link className="link" to={`/work/${link}`}>View Case <Icon id="arrow" className="icon icon--xsmall" /></Link>
+        <Parallax
+          offsetYMin={`${offsetY * -1}px`}
+          offsetYMax={`${offsetY}px`}
+          slowerScrollRate={senseUpwards}>
+          <div className="work__item__info">
+            <div className="work__item__info__wrapper">
+              <h5>{title}</h5>
+              <p className="work__item__info__tags">{tags}</p>
+              <p className="work__item__info__content">{description}</p>
+              <div className="work__item__info__button">
+                <Link className="link" to={link}>View Case <Icon id="arrow" className="icon icon--xsmall" /></Link>
+              </div>
             </div>
           </div>
-        </div>
-      </Parallax>
+        </Parallax>
       </aside>
     </article>
   );
