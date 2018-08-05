@@ -5,7 +5,7 @@ import imgPersonalPhoto2x from '../i/luis-millan-photo@2x.jpg';
 
 const Footer = () => (
   <footer>
-    <a id="about">&nbsp;</a>
+    <a id="about"> </a>
 
     <div className="wrapper">
       <div className="footer__photo">
