@@ -28,7 +28,7 @@ const Home = () => {
           customCoverClass="dejavu" />
 
         <Work
-          title="NASA Intake Log Application"
+          title="NASA Intake Tracker Application"
           tags="Research • iOS Development"
           description="Food Intake Tracker System (iPad app), designed and developed through crowdsourcing in Topcoder, to collect data from astronauts food records"
           link={Routes.WORK_DETAILS.replace(':id', Routes.WORK_DETAILS_NASA)}
