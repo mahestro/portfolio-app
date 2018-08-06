@@ -291,7 +291,7 @@ h5 {
   line-height: 36px;
   font-weight: 400; }
 
-.typography-lead, .footer__links ul li a {
+.typography-lead, .footer__links ul li a, .work-details__quote q {
   font-family: "Montserrat", arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -397,6 +397,8 @@ footer {
         display: block;
         margin: 0 auto 12px;
         fill: #ECECEC; }
+      .footer__links ul li a {
+        color: #FF6700; }
 
 .footer__copyright {
   padding: 216px 0 48px;
@@ -523,6 +525,26 @@ footer {
   .work-details__header--dejavu .work-details__header__shot img {
     bottom: -68px; }
 
+.work-details__header--nasa {
+  background-color: #376DA7; }
+  .work-details__header--nasa .work-details__header__shot img {
+    bottom: -68px; }
+
+.work-details__header--lmp {
+  background-color: #376DA7; }
+  .work-details__header--lmp .work-details__header__shot img {
+    bottom: -68px; }
+
+.work-details__header--squidjob {
+  background-color: #376DA7; }
+  .work-details__header--squidjob .work-details__header__shot img {
+    bottom: -68px; }
+
+.work-details__header--concepts {
+  background-color: #3B3836; }
+  .work-details__header--concepts .work-details__header__shot img {
+    bottom: -75px; }
+
 .work-details__wrapper {
   min-width: 375px;
   max-width: 796px;
@@ -557,7 +579,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 72px; }
 
 .work-details__visual__shot__photo {
   margin: 0 12px;
@@ -570,11 +593,60 @@ footer {
   display: inline-block;
   height: 24px;
   line-height: 24px;
-  margin: 24px auto 0;
+  margin: 24px auto;
   padding: 0 24px;
   text-align: center;
   color: #77716D;
   background-color: #ECECEC; }
+
+.work-details__outcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.work-details__outcome {
+  width: 220px;
+  margin: 72px 30px 0;
+  text-align: center;
+  color: #77716D; }
+  .work-details__outcome h5 {
+    color: #19A460;
+    margin-bottom: 24px; }
+
+.work-details__quote {
+  padding: 52px 0 72px; }
+  .work-details__quote q {
+    font-family: "Merriweather", Helvetica, arial, sans-serif;
+    display: block;
+    margin-bottom: 44px;
+    color: #77716D;
+    text-align: center; }
+    .work-details__quote q:after {
+      content: ' ';
+      display: block;
+      margin: 28px auto 0;
+      width: 20px;
+      height: 4px;
+      background-color: #376DA7; }
+    .work-details__quote q:last-child::after {
+      display: none; }
+
+.work-details__concept {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; }
+
+.work-details__concept__shot {
+  width: 610px;
+  height: 468px; }
+
+.work-details__concept__info {
+  margin-left: 46px;
+  width: 304px; }
+  .work-details__concept__info h5 {
+    padding-bottom: 24px; }
 
 .bullets {
   padding: 24px 0 0 18px;
@@ -703,6 +775,18 @@ ICONS
 
 .icon--arrowback {
   fill: #FF6700; }
+
+.icon--search-engine,
+.icon--city,
+.icon--page-view,
+.icon--team,
+.icon--microphone,
+.icon--barcode,
+.icon--face,
+.icon--purchase,
+.icon--download,
+.icon--shield {
+  fill: #19A460; }
 
 /*------------------------------------
 HELPERS

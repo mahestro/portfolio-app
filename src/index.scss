@@ -230,6 +230,7 @@ footer {
 
       & a {
         @extend .typography-lead;
+        color: $color-primary;
       }
     }
   }
@@ -401,6 +402,38 @@ footer {
       }
     }
 
+    .work-details__header--nasa {
+      background-color: $color-secondary;
+
+      & .work-details__header__shot img {
+        bottom: -68px;
+      }
+    }
+
+    .work-details__header--lmp {
+      background-color: $color-secondary;
+
+      & .work-details__header__shot img {
+        bottom: -68px;
+      }
+    }
+
+    .work-details__header--squidjob {
+      background-color: $color-secondary;
+
+      & .work-details__header__shot img {
+        bottom: -68px;
+      }
+    }
+
+    .work-details__header--concepts {
+      background-color: $color-black;
+
+      & .work-details__header__shot img {
+        bottom: -75px;
+      }
+    }
+
   .work-details__wrapper {
     min-width: 375px;
     max-width: 796px;
@@ -445,6 +478,7 @@ footer {
       flex-wrap:       wrap;
       justify-content: center;
       align-items:     flex-start;
+      margin-bottom:   $base-unit * 18;
     }
 
       .work-details__visual__shot__photo {
@@ -456,17 +490,82 @@ footer {
       }
 
         .work-details__visual__shot__photo__caption {
+          @extend .typography-caption;
           display:          inline-block;
           height:           24px;
           line-height:      24px;
-          margin:           $base-unit * 6 auto 0;
+          margin:           $base-unit * 6 auto;
           padding:          0 $base-unit * 6;
           text-align:       center;
           color:            $color-grey;
           background-color: $color-light-grey;
-          @extend .typography-caption;
         }
 
+  .work-details__outcome-container {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+    align-items:     flex-start;
+  }
+
+  .work-details__outcome {
+    width:      220px;
+    margin:     72px 30px 0;
+    text-align: center;
+    color:      $color-grey;
+
+    & h5 {
+      color:         $color-success;
+      margin-bottom: $base-unit * 6;
+    }
+  }
+
+  .work-details__quote {
+    padding: $base-unit * 13 0 $base-unit * 18;
+
+    & q {
+      @extend .typography-lead;
+      font-family:    $font-primary-stack;
+      display:        block;
+      margin-bottom:  $base-unit * 11;
+      color:          $color-grey;
+      text-align:     center;
+
+      &:after {
+        content: ' ';
+        display: block;
+        margin:  $base-unit * 7 auto 0;
+        width:   20px;
+        height:  4px;
+        background-color: $color-secondary;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  .work-details__concept {
+    display:     flex;
+    flex-wrap:   wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+    .work-details__concept__shot {
+      width:  610px;
+      height: 468px;
+    }
+
+    .work-details__concept__info {
+      margin-left: 46px;
+      width:       304px;
+
+      & h5 {
+        padding-bottom: $base-unit * 6;
+      }
+    }
 
 .bullets {
   padding:     $base-unit * 6 0 0 18px;
@@ -628,6 +727,19 @@ ICONS
 
 .icon--arrowback {
   fill: $color-primary;
+}
+
+.icon--search-engine,
+.icon--city,
+.icon--page-view,
+.icon--team,
+.icon--microphone,
+.icon--barcode,
+.icon--face,
+.icon--purchase,
+.icon--download,
+.icon--shield {
+  fill: $color-success;
 }
 
 /*------------------------------------

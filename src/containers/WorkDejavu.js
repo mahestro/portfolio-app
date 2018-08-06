@@ -10,6 +10,18 @@ import imgStyleguide1 from '../i/dejavu-styleguide-1.jpg';
 import imgStyleguide12x from '../i/dejavu-styleguide-1@2x.jpg';
 import imgStyleguide2 from '../i/dejavu-styleguide-2.jpg';
 import imgStyleguide22x from '../i/dejavu-styleguide-2@2x.jpg';
+import imgEmail1 from '../i/dejavu-email-1.jpg';
+import imgEmail12x from '../i/dejavu-email-1@2x.jpg';
+import imgEmail2 from '../i/dejavu-email-2.jpg';
+import imgEmail22x from '../i/dejavu-email-2@2x.jpg';
+import imgWf1 from '../i/dejavu-wf-1.jpg';
+import imgWf12x from '../i/dejavu-wf-1@2x.jpg';
+import imgWf2 from '../i/dejavu-wf-2.jpg';
+import imgWf22x from '../i/dejavu-wf-2@2x.jpg';
+import imgVisual1 from '../i/dejavu-visual-1.png';
+import imgVisual12x from '../i/dejavu-visual-1@2x.png';
+import imgVisual2 from '../i/dejavu-visual-2.jpg';
+import imgVisual22x from '../i/dejavu-visual-2@2x.jpg';
 
 const WorkDejavu = () => (
   <section className="work-details">
@@ -94,6 +106,61 @@ const WorkDejavu = () => (
       </div>
     </div>
 
+    <div className="work-details__visual">
+      <div className="work-details__wrapper">
+        <div className="work-details__visual__title">
+          <p className="typography-lead">Email Onboarding Ideation</p>
+        </div>
+      </div>
+
+      <div className="work-details__visual__shot">
+        <Image
+          img={imgEmail1}
+          img2x={imgEmail12x}
+          caption="Email self-explanatory onboarding mechanism (sketches)" />
+        <Image
+          img={imgEmail2}
+          img2x={imgEmail22x}
+          caption="Email final design" />
+      </div>
+    </div>
+
+    <div className="work-details__visual">
+      <div className="work-details__wrapper">
+        <div className="work-details__visual__title">
+          <p className="typography-lead">Wireframes</p>
+        </div>
+      </div>
+
+      <div className="work-details__visual__shot">
+        <Image
+          img={imgWf1}
+          img2x={imgWf12x} />
+        <Image
+          img={imgWf2}
+          img2x={imgWf22x} />
+      </div>
+    </div>
+
+    <div className="work-details__visual">
+      <div className="work-details__wrapper">
+        <div className="work-details__visual__title">
+          <p className="typography-lead">Visual Design</p>
+        </div>
+      </div>
+
+      <div className="work-details__visual__shot">
+        <Image
+          img={imgVisual1}
+          img2x={imgVisual12x}
+          caption="Sketch file view" />
+        <Image
+          img={imgVisual2}
+          img2x={imgVisual22x}
+          caption="Frontend implementation of products configuration" />
+      </div>
+    </div>
+
     <div className="work-details__content">
       <div className="work-details__wrapper">
         <h4>Outcome</h4>
@@ -123,7 +190,7 @@ const WorkDejavu = () => (
           <p className="typography-lead">Useful things I learned</p>
         </div>
 
-        <div className="worl-details__quote">
+        <div className="work-details__quote">
           <q>Humans don't necessarily act as they state they would.</q>
           <q>Users are rarely aware of how websites use their data.</q>
           <q>Clarity is the best friend of uncertainty - balance.</q>
