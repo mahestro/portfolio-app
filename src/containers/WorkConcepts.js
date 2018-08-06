@@ -41,8 +41,8 @@ const WorkConcepts = () => (
       img={imgConcept2}
       img2x={imgConcept22x}>
       <p>As part of a large set of internal applications for employees, a mobile application was created to host quick access and reference to all these applications, to allow discoverability and proper usage of them.</p>
-      <p><strong>Target:</strong> iOS (Phone)</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> iOS (Phone)<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -50,8 +50,8 @@ const WorkConcepts = () => (
       img={imgConcept3}
       img2x={imgConcept32x}>
       <p>Native android application for an online vehicle marketplace targeted to users within the US. Followed material design guidelines.</p>
-      <p><strong>Target:</strong> Android</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> Android<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -59,8 +59,8 @@ const WorkConcepts = () => (
       img={imgConcept2}
       img2x={imgConcept22x}>
       <p>As part of a large set of internal applications for employees, a mobile application was created to host quick access and reference to all these applications, to allow discoverability and proper usage of them.</p>
-      <p><strong>Target:</strong> iOS (Phone)</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> iOS (Phone)<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -68,8 +68,8 @@ const WorkConcepts = () => (
       img={imgConcept4}
       img2x={imgConcept42x}>
       <p>Native iPad application for athletes and coaches of the US National Diving Team. Main goal to keep in mind was to introduce gamification concepts to the training process of athletes to keep them engaged, at the same time as tracking personal records and progression.</p>
-      <p><strong>Target:</strong> iOS (iPad)</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> iOS (iPad)<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -77,8 +77,8 @@ const WorkConcepts = () => (
       img={imgConcept5}
       img2x={imgConcept52x}>
       <p>Hybrid mobile application design targeted to users who attended an onsite event. Users would receive a reward for filling a post-event survey within this application. The application walks the user through the process in a friendly fashion providing a reward at the end after identity confirmation.</p>
-      <p><strong>Target:</strong> Android and iOS (hybrid)</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> Android and iOS (hybrid)<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -86,8 +86,8 @@ const WorkConcepts = () => (
       img={imgConcept6}
       img2x={imgConcept62x}>
       <p>The biggest fitness event of the year for the company needed an application to help users tracking down their progress, following news and performing right away activities during event through the application.</p>
-      <p><strong>Target:</strong> Android and iOS (hybrid)</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> Android and iOS (hybrid)<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
 
     <UiConceptDisplay
@@ -95,8 +95,8 @@ const WorkConcepts = () => (
       img={imgConcept7}
       img2x={imgConcept72x}>
       <p>A well-known attraction park in the US needed to unify the booking process and analyse big data through dashboards, all through a non-traditional giant touch screen, for park users and managers. A set of flows and dashboards were created to fulfil the requirements.</p>
-      <p><strong>Target:</strong> Custom touch-screen device</p>
-      <p><strong>Rights:</strong> Reserved to Topcoder</p>
+      <p><strong>Target:</strong> Custom touch-screen device<br />
+      <strong>Rights:</strong> Reserved to Topcoder</p>
     </UiConceptDisplay>
   </section>
 );

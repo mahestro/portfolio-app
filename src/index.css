@@ -319,7 +319,7 @@ h5 {
 /*------------------------------------
 LAYOUT
 ------------------------------------*/
-.wrapper {
+.wrapper, nav {
   width: 960px;
   margin: 0 auto; }
 
@@ -645,8 +645,6 @@ footer {
 .work-details__concept__info {
   margin-left: 46px;
   width: 304px; }
-  .work-details__concept__info h5 {
-    padding-bottom: 24px; }
 
 .bullets {
   padding: 24px 0 0 18px;
