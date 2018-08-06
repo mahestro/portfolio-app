@@ -96,7 +96,7 @@ const WorkNasa = () => (
           img={imgVisual4}
           img2x={imgVisual42x} />
       </div>
-4   </div>
+   </div>
 
     <div className="work-details__content">
       <div className="work-details__wrapper">
@@ -106,18 +106,15 @@ const WorkNasa = () => (
       <div className="work-details__outcome-container">
         <Outcome
           id="face"
-          title="Object recognition
-          library" />
+          title="Object recognition library" />
 
         <Outcome
           id="microphone"
-          title="Voice recognition
-          library" />
+          title="Voice recognition library" />
 
         <Outcome
           id="barcode"
-          title="Barcode scanning
-          library" />
+          title="Barcode scanning library" />
       </div>
     </div>
   </section>
