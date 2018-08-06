@@ -361,8 +361,43 @@ footer {
 
     .work-details__header {
       display: flex;
+      justify-content: center;
       height:  504px;
+      background-color: $color-black;
+      overflow: hidden;
+    }
+
+      .work-details__header__content {
+        width:       386px;
+        padding-top: 121px;
+
+        & h3 {
+          color: $color-white;
+        }
+
+        & p {
+          color: $color-light-grey;
+          padding-top: $base-unit * 6;
+        }
+      }
+
+
+      .work-details__header__shot {
+        width: 550px;
+        text-align: center;
+
+        & img {
+          position: relative;
+          bottom: 0;
+        }
+      }
+
+    .work-details__header--dejavu {
       background-color: $color-secondary;
+
+      & .work-details__header__shot img {
+        bottom: -68px;
+      }
     }
 
 

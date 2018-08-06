@@ -13,7 +13,8 @@ const WorkDejavu = () => (
       title="Dejavuphoto"
       brief="Photography print self-service for users who attend a wide variety of photo-centric events and want to have those memories back once they get back home"
       img={imgCover}
-      img2x={imgCover2x} />
+      img2x={imgCover2x}
+      customClass="work-details__header--dejavu" />
 
     <div className="work-details__content">
       <div className="work-details__wrapper">

@@ -495,8 +495,31 @@ footer {
 
 .work-details__header {
   display: flex;
+  justify-content: center;
   height: 504px;
+  background-color: #3B3836;
+  overflow: hidden; }
+
+.work-details__header__content {
+  width: 386px;
+  padding-top: 121px; }
+  .work-details__header__content h3 {
+    color: #FFF; }
+  .work-details__header__content p {
+    color: #ECECEC;
+    padding-top: 24px; }
+
+.work-details__header__shot {
+  width: 550px;
+  text-align: center; }
+  .work-details__header__shot img {
+    position: relative;
+    bottom: 0; }
+
+.work-details__header--dejavu {
   background-color: #376DA7; }
+  .work-details__header--dejavu .work-details__header__shot img {
+    bottom: -68px; }
 
 input, textarea {
   font-family: "Merriweather", Helvetica, arial, sans-serif; }
