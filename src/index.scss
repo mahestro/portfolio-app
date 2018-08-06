@@ -363,11 +363,15 @@ footer {
   }
 
     .work-details__header {
-      display:          flex;
-      justify-content:  center;
-      height:           504px;
-      background-color: $color-black;
-      overflow:         hidden;
+      display:               flex;
+      justify-content:       center;
+      height:                504px;
+      background-color:      $color-black;
+      background-attachment: fixed;
+  	  background-size:       cover;
+  	  background-position:   center;
+    	background-repeat:     no-repeat;
+      overflow:              hidden;
     }
 
       .work-details__header__content {
@@ -404,7 +408,8 @@ footer {
     }
 
     .work-details__header--nasa {
-      background-color: $color-secondary;
+      background-image: url(./i/nasa-cover-background.jpg);
+      background-color: $color-black;
 
       & .work-details__header__shot img {
         bottom: -68px;
@@ -644,6 +649,26 @@ LINKS
 
 .link:active {
 	color: $color-tertiary;
+}
+
+ul.reference-links {
+  position:   relative;
+  margin-top: $base-unit * 3;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: -22px;
+    background-color: $color-light-grey;
+  }
+
+  & li {
+    padding: $base-unit * 3 0;
+  }
 }
 
 /*------------------------------------

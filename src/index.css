@@ -501,6 +501,10 @@ footer {
   justify-content: center;
   height: 504px;
   background-color: #3B3836;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden; }
 
 .work-details__header__content {
@@ -526,7 +530,8 @@ footer {
     bottom: -68px; }
 
 .work-details__header--nasa {
-  background-color: #376DA7; }
+  background-image: url(./i/nasa-cover-background.jpg);
+  background-color: #3B3836; }
   .work-details__header--nasa .work-details__header__shot img {
     bottom: -68px; }
 
@@ -707,6 +712,21 @@ LINKS
 
 .link:active {
   color: #004C9A; }
+
+ul.reference-links {
+  position: relative;
+  margin-top: 12px; }
+  ul.reference-links::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: -22px;
+    background-color: #ECECEC; }
+  ul.reference-links li {
+    padding: 12px 0; }
 
 /*------------------------------------
 BUTTONS
