@@ -5,7 +5,11 @@ import Outcome from '../components/Outcome';
 import imgCover from '../i/dejavu-cover.png';
 import imgCover2x from '../i/dejavu-cover@2x.png';
 import imgBranding from '../i/dejavu-branding-logo.jpg';
-import imgBranding2x from '../i/dejavu-branding-logo@2x.png';
+import imgBranding2x from '../i/dejavu-branding-logo@2x.jpg';
+import imgStyleguide1 from '../i/dejavu-styleguide-1.jpg';
+import imgStyleguide12x from '../i/dejavu-styleguide-1@2x.jpg';
+import imgStyleguide2 from '../i/dejavu-styleguide-2.jpg';
+import imgStyleguide22x from '../i/dejavu-styleguide-2@2x.jpg';
 
 const WorkDejavu = () => (
   <section className="work-details">
@@ -18,16 +22,15 @@ const WorkDejavu = () => (
 
     <div className="work-details__content">
       <div className="work-details__wrapper">
-        <h3>Project Overview</h3>
+        <h4>Project Overview</h4>
         <p>
-          Dejavuphoto is an in progress startup which serves as a channel for photography printing service for users who visit certain type of events such as sports, vacations and others, wishing to buy the pictures the event administration took of them after they went back home.
+          Dejavuphoto is an in progress startup which serves as a channel for photography printing service for users who visit certain type of events such as sports, vacations and others, wishing to buy the pictures the event administration took of them after they went back home.</p>
 
-          <strong>Timeline: </strong><br />
-          2 months (2016)<br />
+          <p><strong>Timeline: </strong><br />
+          2 months (2016)</p>
 
-          <strong>Timeline: </strong><br />
-          As part of the multi-disciplined team, including data scientists, seasoned PMs and senior developers, <strong>my role was UX designer on this project and partner</strong>. Some of my responsibilities included designing the branding identity (design vision, logo, content strategy), information architecture, prototyping, testing, interaction design and frontend development.
-        </p>
+          <p><strong>Role: </strong><br />
+          As part of the multi-disciplined team, including data scientists, seasoned PMs and senior developers, <strong>my role was UX designer on this project and partner</strong>. Some of my responsibilities included designing the branding identity (design vision, logo, content strategy), information architecture, prototyping, testing, interaction design and frontend development.</p>
 
         <div className="work-details__twocols">
           <div className="work-details__twocols__left">
@@ -38,13 +41,13 @@ const WorkDejavu = () => (
           <div className="work-details__twocols__right">
             <h5>Contribution</h5>
             <ul className="bullets">
-              <li>User research</li>
-              <li>Wireframes</li>
-              <li>Prototyping</li>
-              <li>Branding identity</li>
-              <li>Style guidelines</li>
-              <li>UI Design</li>
-              <li>Frontend development</li>
+              <li><span>User research</span></li>
+              <li><span>Wireframes</span></li>
+              <li><span>Prototyping</span></li>
+              <li><span>Branding identity</span></li>
+              <li><span>Style guidelines</span></li>
+              <li><span>UI Design</span></li>
+              <li><span>Frontend development</span></li>
             </ul>
           </div>
         </div>
@@ -53,8 +56,9 @@ const WorkDejavu = () => (
 
     <div className="work-details__content">
       <div className="work-details__wrapper">
-        <h3>Solution</h3>
-        <p>In order to know our audience and generate accurate user groups, we had to base our user research on qualitative methods, being contextual inquiry and interviewing the main research methods to get to know what we were dealing with; not leaving aside a survey study to collect data about our market segments. <br />
+        <h4>Solution</h4>
+        <p>In order to know our audience and generate accurate user groups, we had to base our user research on qualitative methods, being contextual inquiry and interviewing the main research methods to get to know what we were dealing with; not leaving aside a survey study to collect data about our market segments. </p>
+        <p>
         This research allowed the team to determine the path to offer clarity to the users. The most sensitive design decision was to set up as primary principle to the project "give and take and give", meaning that there was sensitive information to display, careful data to collect about the user and a self-explanatory ecosystem that allows the user stay informed at every step of the origin of these photos, from email contact through the purchase landing page.</p>
       </div>
     </div>
@@ -62,42 +66,37 @@ const WorkDejavu = () => (
     <div className="work-details__visual">
       <div className="work-details__wrapper">
         <div className="work-details__visual__title">
-          <p className="typography--lead">Branding/logo exploration</p>
+          <p className="typography-lead">Branding/logo exploration</p>
         </div>
       </div>
 
       <div className="work-details__visual__shot">
         <Image
-          img={imgCover2x}
-          img2x={imgBranding2x}
-          caption="Dejavu Branding Logo Exploration"/>
+          img={imgBranding}
+          img2x={imgBranding2x} />
+      </div>
+    </div>
 
-        <div className="work-details__visual__shot__photo">
-          <img
-            src={imgCover2x}
-            srcSet={`${imgBranding2x} 2x`}
-            alt="Dejavu Branding Logo Exploration" />
-          <div className="work-details__visual__shot__photo__caption">
-            Caption text
-          </div>
+    <div className="work-details__visual">
+      <div className="work-details__wrapper">
+        <div className="work-details__visual__title">
+          <p className="typography-lead">Style Guidelines - UI Development Kit</p>
         </div>
+      </div>
 
-        <div className="work-details__visual__shot__photo">
-          <img
-            src={imgBranding}
-            srcSet={`${imgBranding2x} 2x`}
-            alt="Dejavu Branding Logo Exploration" />
-          <div className="work-details__visual__shot__photo__caption">
-            Caption text
-          </div>
-        </div>
-
+      <div className="work-details__visual__shot">
+        <Image
+          img={imgStyleguide1}
+          img2x={imgStyleguide12x} />
+        <Image
+          img={imgStyleguide2}
+          img2x={imgStyleguide22x} />
       </div>
     </div>
 
     <div className="work-details__content">
       <div className="work-details__wrapper">
-        <h3>Outcome</h3>
+        <h4>Outcome</h4>
       </div>
 
       <div className="work-details__outcome-container">
@@ -121,7 +120,7 @@ const WorkDejavu = () => (
     <div className="work-details__visual">
       <div className="work-details__wrapper">
         <div className="work-details__visual__title">
-          <p className="typography--lead">Useful things I learned</p>
+          <p className="typography-lead">Useful things I learned</p>
         </div>
 
         <div className="worl-details__quote">

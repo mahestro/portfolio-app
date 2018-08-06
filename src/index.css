@@ -295,7 +295,8 @@ h5 {
   font-family: "Montserrat", arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #376DA7; }
 
 .typography-body, p {
   font-family: "Merriweather", Helvetica, arial, sans-serif;
@@ -303,7 +304,7 @@ h5 {
   line-height: 24px;
   font-weight: 400; }
 
-.typography-caption {
+.typography-caption, .work-details__visual__shot__photo__caption {
   font-family: "Merriweather", Helvetica, arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
@@ -511,6 +512,7 @@ footer {
 
 .work-details__header__shot {
   width: 550px;
+  margin-left: 12px;
   text-align: center; }
   .work-details__header__shot img {
     position: relative;
@@ -520,6 +522,73 @@ footer {
   background-color: #376DA7; }
   .work-details__header--dejavu .work-details__header__shot img {
     bottom: -68px; }
+
+.work-details__wrapper {
+  min-width: 375px;
+  max-width: 796px;
+  width: auto;
+  margin: 0 auto; }
+
+.work-details__content {
+  margin-bottom: 24px;
+  padding: 108px 0;
+  background-color: #FFF; }
+  .work-details__content p {
+    padding-top: 24px; }
+
+.work-details__twocols {
+  display: flex;
+  padding-top: 72px; }
+
+.work-details__twocols__left {
+  width: 468px; }
+
+.work-details__twocols__right {
+  width: 220px;
+  margin-left: 106px; }
+
+.work-details__visual {
+  padding-top: 72px; }
+
+.work-details__visual__title {
+  padding-bottom: 32px; }
+
+.work-details__visual__shot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.work-details__visual__shot__photo {
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 12px; }
+
+.work-details__visual__shot__photo__caption {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+  text-align: center;
+  color: #77716D;
+  background-color: #ECECEC; }
+
+.bullets {
+  padding: 24px 0 0 18px;
+  list-style-type: square;
+  color: #376DA7; }
+  .bullets li {
+    margin-bottom: 12px; }
+    .bullets li:last-child {
+      margin-bottom: 0px; }
+    .bullets li span {
+      color: #3B3836; }
+
+strong {
+  font-weight: 600; }
 
 input, textarea {
   font-family: "Merriweather", Helvetica, arial, sans-serif; }
