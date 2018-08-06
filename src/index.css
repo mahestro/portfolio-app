@@ -490,6 +490,14 @@ footer {
 .work__item__info__button {
   padding-top: 44px; }
 
+.work-details {
+  margin-top: 41px; }
+
+.work-details__header {
+  display: flex;
+  height: 504px;
+  background-color: #376DA7; }
+
 input, textarea {
   font-family: "Merriweather", Helvetica, arial, sans-serif; }
 

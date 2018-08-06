@@ -355,6 +355,17 @@ footer {
         padding-top: $base-unit * 11;
       }
 
+  .work-details {
+    margin-top: 41px;
+  }
+
+    .work-details__header {
+      display: flex;
+      height:  504px;
+      background-color: $color-secondary;
+    }
+
+
 input, textarea {
   font-family: $font-primary-stack;
 }
