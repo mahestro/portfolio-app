@@ -533,17 +533,17 @@ footer {
   background-image: url(./i/nasa-cover-background.jpg);
   background-color: #3B3836; }
   .work-details__header--nasa .work-details__header__shot img {
-    bottom: -68px; }
+    bottom: -40px; }
 
 .work-details__header--lmp {
   background-color: #376DA7; }
   .work-details__header--lmp .work-details__header__shot img {
-    bottom: -68px; }
+    bottom: -80px; }
 
 .work-details__header--squidjob {
   background-color: #376DA7; }
   .work-details__header--squidjob .work-details__header__shot img {
-    bottom: -68px; }
+    bottom: -70px; }
 
 .work-details__header--concepts {
   background-color: #3B3836; }
@@ -562,6 +562,8 @@ footer {
   background-color: #FFF; }
   .work-details__content p {
     padding-top: 24px; }
+  .work-details__content h5.title-space {
+    margin-top: 72px; }
 
 .work-details__twocols {
   display: flex;

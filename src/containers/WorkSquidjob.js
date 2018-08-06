@@ -1,44 +1,65 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Image from '../components/Image';
-import Outcome from '../components/Outcome';
-import imgCover from '../i/dejavu-cover.png';
-import imgCover2x from '../i/dejavu-cover@2x.png';
+import imgCover from '../i/squidjob-cover.png';
+import imgCover2x from '../i/squidjob-cover@2x.png';
+import imgWf1 from '../i/squidjob-wf-1.jpg';
+import imgWf12x from '../i/squidjob-wf-1@2x.jpg';
+import imgWf2 from '../i/squidjob-wf-2.jpg';
+import imgWf22x from '../i/squidjob-wf-2@2x.jpg';
+import imgWf3 from '../i/squidjob-wf-3.jpg';
+import imgWf32x from '../i/squidjob-wf-3@2x.jpg';
+import imgWf4 from '../i/squidjob-wf-4.jpg';
+import imgWf42x from '../i/squidjob-wf-4@2x.jpg';
+import imgWf5 from '../i/squidjob-wf-5.jpg';
+import imgWf52x from '../i/squidjob-wf-5@2x.jpg';
+import imgWf6 from '../i/squidjob-wf-6.jpg';
+import imgWf62x from '../i/squidjob-wf-6@2x.jpg';
+import imgVisual1 from '../i/squidjob-visual-1.jpg';
+import imgVisual12x from '../i/squidjob-visual-1@2x.jpg';
+import imgVisual2 from '../i/squidjob-visual-2.jpg';
+import imgVisual22x from '../i/squidjob-visual-2@2x.jpg';
+import imgVisual3 from '../i/squidjob-visual-3.jpg';
+import imgVisual32x from '../i/squidjob-visual-3@2x.jpg';
+import imgVisual4 from '../i/squidjob-visual-4.jpg';
+import imgVisual42x from '../i/squidjob-visual-4@2x.jpg';
+import imgVisual5 from '../i/squidjob-visual-5.jpg';
+import imgVisual52x from '../i/squidjob-visual-5@2x.jpg';
+import imgVisual6 from '../i/squidjob-visual-6.jpg';
+import imgVisual62x from '../i/squidjob-visual-6@2x.jpg';
 
 const WorkSquidjob = () => (
   <section className="work-details">
-    {/* <Hero
-      title="Dejavuphoto"
-      brief="Photography print self-service for users who attend a wide variety of photo-centric events and want to have those memories back once they get back home"
+    <Hero
+      title="Household Service Marketplace"
+      brief="Service providers connect with customers through an online tool/website, managing transactions, reviews and content"
       img={imgCover}
       img2x={imgCover2x}
-      customClass="work-details__header--dejavu" />
+      customClass="work-details__header--squidjob" />
 
     <div className="work-details__content">
       <div className="work-details__wrapper">
         <h4>Project Overview</h4>
-        <p>
-          Dejavuphoto is an in progress startup which serves as a channel for photography printing service for users who visit certain type of events such as sports, vacations and others, wishing to buy the pictures the event administration took of them after they went back home.</p>
+        <p>The website goal is to provide service buyers and service providers with the most convenient venue where they can easily transact business with one another. Service buyers post orders related to household and automotive services. Qualified service providers provide quick estimates and bid against each other to get the job. The service provider with the winning bid will be the one given the chance to get in contact with the buyer and provide their services.</p>
 
-          <p><strong>Timeline: </strong><br />
-          2 months (2016)</p>
+        <p><strong>Timeline: </strong><br />
+        11 Months (2011 - 2012)</p>
 
-          <p><strong>Role: </strong><br />
-          As part of the multi-disciplined team, including data scientists, seasoned PMs and senior developers, <strong>my role was UX designer on this project and partner</strong>. Some of my responsibilities included designing the branding identity (design vision, logo, content strategy), information architecture, prototyping, testing, interaction design and frontend development.</p>
+        <p><strong>Role: </strong><br />
+        I participated as <strong>UI Designer and Frontend developer</strong>. The team was composed by several disciplines working remotely. My common responsibilities were related to requirements analysis, interaction design, UI design, frontend development, testing, among others.</p>
 
         <div className="work-details__twocols">
           <div className="work-details__twocols__left">
             <h5>The Challenge</h5>
-            <p>Approaching potential customers to let them know the event administration had some photos to offer after time had passed. It could seem invasive even though they sign up/agree for this during the event registration. Conversion relies on trustability and clarity for this audience, which made us focus our efforts on providing as much information as we could to make the user feel in a trustable environment.</p>
+            <p>Multiple critical workflows required to be designed, including  users transactions, rating and feedback. Some of these processes were complex, containing too many steps that could be difficult to use for novice users.</p>
+            <p>Another major concern detected not only on this project, also in well seasoned competitors after studying them, was a weakness on reliability, people wouldn’t simply trust a written review of someone they don’t actually know.</p>
           </div>
 
           <div className="work-details__twocols__right">
             <h5>Contribution</h5>
             <ul className="bullets">
-              <li><span>User research</span></li>
               <li><span>Wireframes</span></li>
               <li><span>Prototyping</span></li>
-              <li><span>Branding identity</span></li>
               <li><span>Style guidelines</span></li>
               <li><span>UI Design</span></li>
               <li><span>Frontend development</span></li>
@@ -51,59 +72,9 @@ const WorkSquidjob = () => (
     <div className="work-details__content">
       <div className="work-details__wrapper">
         <h4>Solution</h4>
-        <p>In order to know our audience and generate accurate user groups, we had to base our user research on qualitative methods, being contextual inquiry and interviewing the main research methods to get to know what we were dealing with; not leaving aside a survey study to collect data about our market segments. </p>
-        <p>
-        This research allowed the team to determine the path to offer clarity to the users. The most sensitive design decision was to set up as primary principle to the project "give and take and give", meaning that there was sensitive information to display, careful data to collect about the user and a self-explanatory ecosystem that allows the user stay informed at every step of the origin of these photos, from email contact through the purchase landing page.</p>
-      </div>
-    </div>
-
-    <div className="work-details__visual">
-      <div className="work-details__wrapper">
-        <div className="work-details__visual__title">
-          <p className="typography-lead">Branding/logo exploration</p>
-        </div>
-      </div>
-
-      <div className="work-details__visual__shot">
-        <Image
-          img={imgBranding}
-          img2x={imgBranding2x} />
-      </div>
-    </div>
-
-    <div className="work-details__visual">
-      <div className="work-details__wrapper">
-        <div className="work-details__visual__title">
-          <p className="typography-lead">Style Guidelines - UI Development Kit</p>
-        </div>
-      </div>
-
-      <div className="work-details__visual__shot">
-        <Image
-          img={imgStyleguide1}
-          img2x={imgStyleguide12x} />
-        <Image
-          img={imgStyleguide2}
-          img2x={imgStyleguide22x} />
-      </div>
-    </div>
-
-    <div className="work-details__visual">
-      <div className="work-details__wrapper">
-        <div className="work-details__visual__title">
-          <p className="typography-lead">Email Onboarding Ideation</p>
-        </div>
-      </div>
-
-      <div className="work-details__visual__shot">
-        <Image
-          img={imgEmail1}
-          img2x={imgEmail12x}
-          caption="Email self-explanatory onboarding mechanism (sketches)" />
-        <Image
-          img={imgEmail2}
-          img2x={imgEmail22x}
-          caption="Email final design" />
+        <p>Considering the target audience and business goals, one of the main design decisions relied on simplicity, to offer a tool that was very easy to understand, focusing on relevance rather than precision.</p>
+        <p>Supporting newcomers and novice users was achieved by using how-to instructions and visual prioritisation of the key tasks (onboarding). We ended up creating a user-friendly UI, easy to understand, making it suitable even for the most nontechnical users.</p>
+        <p>We saw necessary to implement an unbiased advertisement system, where both parties can provide and share feedbacks and rate each other that will be visible for all users, including non registered users.</p>
       </div>
     </div>
 
@@ -117,10 +88,28 @@ const WorkSquidjob = () => (
       <div className="work-details__visual__shot">
         <Image
           img={imgWf1}
-          img2x={imgWf12x} />
+          img2x={imgWf12x}
+          caption="Home page" />
         <Image
           img={imgWf2}
-          img2x={imgWf22x} />
+          img2x={imgWf22x}
+          caption="Job offers" />
+        <Image
+          img={imgWf3}
+          img2x={imgWf32x}
+          caption="Job details" />
+        <Image
+          img={imgWf4}
+          img2x={imgWf42x}
+          caption="Place estimate" />
+        <Image
+          img={imgWf5}
+          img2x={imgWf52x}
+          caption="Buyer dashboard" />
+        <Image
+          img={imgWf6}
+          img2x={imgWf62x}
+          caption="Post new job offer" />
       </div>
     </div>
 
@@ -135,50 +124,30 @@ const WorkSquidjob = () => (
         <Image
           img={imgVisual1}
           img2x={imgVisual12x}
-          caption="Sketch file view" />
+          caption="Home page - prototype version" />
         <Image
           img={imgVisual2}
           img2x={imgVisual22x}
-          caption="Frontend implementation of products configuration" />
+          caption="Home page - refined after testing" />
+        <Image
+          img={imgVisual3}
+          img2x={imgVisual32x}
+          caption="Job details page" />
+        <Image
+          img={imgVisual4}
+          img2x={imgVisual42x}
+          caption="Place estimate assistant" />
+        <Image
+          img={imgVisual5}
+          img2x={imgVisual52x}
+          caption="Buyer's dashboard - prototype version" />
+        <Image
+          img={imgVisual6}
+          img2x={imgVisual62x}
+          caption="Buyer's dashboard - refine after testing" />
       </div>
     </div>
 
-    <div className="work-details__content">
-      <div className="work-details__wrapper">
-        <h4>Outcome</h4>
-      </div>
-
-      <div className="work-details__outcome-container">
-        <Outcome
-          id="shield"
-          title="90%"
-          brief="Average trustability score after validated prototype" />
-
-        <Outcome
-          id="purchase"
-          title="218 seg"
-          brief="Average required time to complete the lightweight purchase flow" />
-
-        <Outcome
-          id="download"
-          title="1,3 seg"
-          brief="Photos page load" />
-      </div>
-    </div>
-
-    <div className="work-details__visual">
-      <div className="work-details__wrapper">
-        <div className="work-details__visual__title">
-          <p className="typography-lead">Useful things I learned</p>
-        </div>
-
-        <div className="work-details__quote">
-          <q>Humans don't necessarily act as they state they would.</q>
-          <q>Users are rarely aware of how websites use their data.</q>
-          <q>Clarity is the best friend of uncertainty - balance.</q>
-        </div>
-      </div>
-    </div> */}
   </section>
 );
 

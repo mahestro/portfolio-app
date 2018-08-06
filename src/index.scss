@@ -412,7 +412,7 @@ footer {
       background-color: $color-black;
 
       & .work-details__header__shot img {
-        bottom: -68px;
+        bottom: -40px;
       }
     }
 
@@ -420,7 +420,7 @@ footer {
       background-color: $color-secondary;
 
       & .work-details__header__shot img {
-        bottom: -68px;
+        bottom: -80px;
       }
     }
 
@@ -428,7 +428,7 @@ footer {
       background-color: $color-secondary;
 
       & .work-details__header__shot img {
-        bottom: -68px;
+        bottom: -70px;
       }
     }
 
@@ -454,6 +454,10 @@ footer {
 
     & p {
       padding-top: $base-unit * 6;
+    }
+
+    & h5.title-space {
+      margin-top: $base-unit * 18;
     }
   }
 
