@@ -55,15 +55,6 @@ const WorkConcepts = () => (
     </UiConceptDisplay>
 
     <UiConceptDisplay
-      title="Zurich Employee Hub Application"
-      img={imgConcept2}
-      img2x={imgConcept22x}>
-      <p>As part of a large set of internal applications for employees, a mobile application was created to host quick access and reference to all these applications, to allow discoverability and proper usage of them.</p>
-      <p><strong>Target:</strong> iOS (Phone)<br />
-      <strong>Rights:</strong> Reserved to Topcoder</p>
-    </UiConceptDisplay>
-
-    <UiConceptDisplay
       title="USA Diving Team Application"
       img={imgConcept4}
       img2x={imgConcept42x}>
