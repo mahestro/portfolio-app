@@ -9,7 +9,7 @@ import WorkSquidjob from './WorkSquidjob';
 import WorkConcepts from './WorkConcepts';
 
 const WorkDetails = ({ match }) => {
-  function selectComponent (id) {
+  const selectComponent = (id) => {
     switch(id) {
       case Routes.WORK_DETAILS_DEJAVU:
         return <WorkDejavu />;

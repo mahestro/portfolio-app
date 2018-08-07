@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import './index.css';
 import App from './containers/App.js';
