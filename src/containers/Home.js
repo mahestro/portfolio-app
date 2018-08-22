@@ -28,16 +28,16 @@ const Home = () => {
           customCoverClass="dejavu" />
 
         <Work
-          title="NASA Intake Tracker Application"
-          tags="Research • iOS Development"
-          description="Food Intake Tracker System (iPad app), designed and developed through crowdsourcing in Topcoder, to collect data from astronauts food records"
-          link={Routes.WORK_DETAILS.replace(':id', Routes.WORK_DETAILS_NASA)}
-          img={imgNasa}
-          img2x={imgNasa2x}
+          title="Household Service Marketplace"
+          tags="UI • Frontend"
+          description="Service providers connect with customers through an online tool/website, managing transactions, reviews and content"
+          link={Routes.WORK_DETAILS.replace(':id', Routes.WORK_DETAILS_SQUIDJOB)}
+          img={imgSquidjob}
+          img2x={imgSquidjob2x}
           orientation={orientations.CARD_ORIENTATION_LEFT}
-          customCoverClass="nasa" />
+          customCoverClass="squidjob" />
 
-          <Work
+        <Work
           title="News Franchise"
           tags="Branding • UI • CMS • Entrepreneurship"
           description="Engaging community-based news website, mainly targeted to users from my home town to create acknowledgement of the culture and positive aspects to share about the city"
@@ -48,14 +48,14 @@ const Home = () => {
           customCoverClass="lmp" />
 
         <Work
-          title="Household Service Marketplace"
-          tags="UI • Frontend"
-          description="Service providers connect with customers through an online tool/website, managing transactions, reviews and content"
-          link={Routes.WORK_DETAILS.replace(':id', Routes.WORK_DETAILS_SQUIDJOB)}
-          img={imgSquidjob}
-          img2x={imgSquidjob2x}
+          title="NASA Intake Tracker Application"
+          tags="Research • iOS Development"
+          description="Food Intake Tracker System (iPad app), designed and developed through crowdsourcing in Topcoder, to collect data from astronauts food records"
+          link={Routes.WORK_DETAILS.replace(':id', Routes.WORK_DETAILS_NASA)}
+          img={imgNasa}
+          img2x={imgNasa2x}
           orientation={orientations.CARD_ORIENTATION_LEFT}
-          customCoverClass="squidjob" />
+          customCoverClass="nasa" />
 
           <Work
           title="UI Concepts"

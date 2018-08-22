@@ -23,7 +23,7 @@ const Footer = () => (
       <div className="footer__links">
         <ul>
           <li>
-              <a className="link" href="https://www.linkedin.com/in/luis-mill%C3%A1n-1993689/" rel="noopener noreferrer" target="_blank">
+              <a className="link" href="https://www.linkedin.com/in/mahestro" rel="noopener noreferrer" target="_blank">
                 <Icon className="icon icon--small" id="lnkdin" />
                 Linkedin
               </a>
