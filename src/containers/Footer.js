@@ -51,7 +51,7 @@ const Footer = () => (
       <div className="footer__copyright">
         <p className="typography-caption color--grey">
           Designed and coded by me.<br />
-          © Copyright 2018 Luis Millán.<br />
+          © Copyright 2020 Luis Millán.<br />
           All rights reserved
         </p>
       </div>
